@@ -1,3 +1,20 @@
-.test {
+.mainHeader {
+  display: flex;
+  flex-flow: row wrap;
+
   border: 1px solid red;
+  padding: 1rem;
+
+  &__logo-box {
+
+  }
+
+  &__logo {
+    width: 200px;
+    height: 200px;
+  }
+
+  &__menu-box {
+
+  }
 }
