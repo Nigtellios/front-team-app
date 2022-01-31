@@ -1,6 +1,8 @@
 .mainHeader {
+  $self: &;
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-between;
 
   border: 1px solid red;
   padding: 1rem;
@@ -12,6 +14,19 @@
   &__logo {
     width: 200px;
     height: 200px;
+
+    @media (prefers-reduced-motion: no-preference) {
+      animation: logo-spin infinite 20s linear;
+    }
+
+    @keyframes logo-spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
   }
 
   &__menu-box {
