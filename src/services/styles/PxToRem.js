@@ -1,6 +1,5 @@
 const rem = (px) => {
-  let number = (px / 16);
-  return number + 'rem';
+  return (px / 16) + 'rem';
 }
 
 export default rem;
