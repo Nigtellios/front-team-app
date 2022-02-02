@@ -1,13 +1,11 @@
-import logo from './logo.svg';
-import Header from './components/Header/Header';
-import './App.scss';
+import MainHeader from './components/Header/Header';
 
-function App() {
+function FrontTeamApp() {
   return (
     <main>
-      <Header/>
+      <MainHeader/>
     </main>
   );
 }
 
-export default App;
+export default FrontTeamApp;
