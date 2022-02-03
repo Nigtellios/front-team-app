@@ -1,7 +1,9 @@
 import React from 'react';
 import logo from '../../logo.svg';
 import styled from 'styled-components';
-import rem from '../../services/styles/PxToRem';
+import rem from '../../services/styles/pxToRem';
+import breakpoint from '../../services/styles/breakpoint';
+import {gridBreakpoints} from "../../services/styles/layout";
 
 function MainHeader() {
   return (
@@ -33,6 +35,10 @@ const HeaderWrapper = styled.div`
   margin-left: auto;
   margin-right: auto;
   border: ${ rem(1) } solid red;
+  
+  ${ breakpoint.min('xl') } {
+    background: red;
+  }
 `;
 
 const LogoBox = styled.div`
