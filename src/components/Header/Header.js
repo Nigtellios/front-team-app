@@ -2,8 +2,7 @@ import React from 'react';
 import logo from '../../logo.svg';
 import styled from 'styled-components';
 import rem from '../../services/styles/pxToRem';
-import breakpoint from '../../services/styles/breakpoint';
-import {gridBreakpoints} from "../../services/styles/layout";
+import media from '../../services/styles/media';
 
 function MainHeader() {
   return (
@@ -36,7 +35,7 @@ const HeaderWrapper = styled.div`
   margin-right: auto;
   border: ${ rem(1) } solid red;
   
-  ${ breakpoint.min('xl') } {
+  ${ media.min('xl') } {
     background: red;
   }
 `;
